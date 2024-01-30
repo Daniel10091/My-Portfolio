@@ -9,5 +9,11 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portfolio';
+  
+  title = 'Harvey Specter';
+  
+  constructor() {
+    this.title = this.title.replace(/(\w+)\s(\w+)/, '$1');
+  }
+
 }

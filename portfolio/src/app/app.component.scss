@@ -1,6 +1,54 @@
 .page {
   min-height: 100vh;
   section {
-    min-height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
+    // height: 100vh;
+  }
+}
+
+section#presentation {
+  background: url(../assets/images/user.png) no-repeat center center;
+  background-size: cover;
+  padding-left: 200px;
+  h1 {
+    color: #fff;
+    font-size: 7rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    span {
+      font-size: 7rem;
+      color: #aa93f8;
+    }
+  }
+}
+
+nav#navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #151a1f;
+  z-index: 999;
+  ul.menu {
+    height: 100%;
+    li {
+      width: 200px;
+      height: 100%;
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        will-change: contents;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: #aa93f8;
+          background-color: #d5c9fb;
+        }
+      }
+    }
   }
 }

@@ -1,8 +1,30 @@
 <div class="page flex flex-column">
 
-  <section class="welcome flex justify-content-center align-items-center">
-    <h1>Welcome to {{ title }}!</h1>
+  <!-- PRESENTATION -->
+
+  <section id="presentation" class="welcome flex justify-content-start align-items-center">
+    <div class="flex flex-column align-items-start">
+      <h1>Hello!</h1>
+      <h1>I'm <span>{{ title }}</span>!</h1>
+    </div>
+    <div class="background"></div>
   </section>
+
+  <!-- NAVIGATION -->
+
+  <nav id="navigation" class="flex justify-content-center align-items-center">
+    <ul class="menu flex justify-content-center align-items-center">
+      <li class="flex justify-content-center align-items-center">
+        <a class="w-full h-full flex justify-content-center align-items-center" routerLink="/home" routerLinkActive="active">Home</a>
+      </li>
+      <li class="flex justify-content-center align-items-center">
+        <a class="w-full h-full flex justify-content-center align-items-center" routerLink="/about" routerLinkActive="active">About</a>
+      </li>
+      <li class="flex justify-content-center align-items-center">
+        <a class="w-full h-full flex justify-content-center align-items-center" routerLink="/contact" routerLinkActive="active">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
 </div>
 
