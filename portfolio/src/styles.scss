@@ -1,5 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('./assets/styles/variables.css');
+@import url('./assets/styles/typography.css');
+
+:root {
+  --color-1-bg: #ffffff;
+  --color-2-bg: #151a1f;
+  --color-3-bg: #f1f68f;
+  --color-4-bg: #b0efda;
+  --color-5-bg: #d5c9fb;
+  --color-6-bg: #ffbc90;
+
+  --color-1-bg-line: #eef1f4;
+  --color-2-bg-line: #1f272e;
+  --color-3-bg-line: #f1f68f;
+  --color-4-bg-line: #b0efda;
+  --color-5-bg-line: #d5c9fb;
+  --color-6-bg-line: #ffbc90;
+
+  --curzr-logo-color: #292927;
+
+  body {
+    position: relative;
+    width: 100%;
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: .875rem;
+    overflow-x: hidden;
+    color: #ffffff;
+    user-select: none;
+
+    .page {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100vh;
+      background-color: var(--color-2-bg);
+    }
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,39 +55,18 @@
   cursor: none;
 }
 
-:root {
-  --cursor-1-bg: #ffffff;
-  --cursor-2-bg: #151a1f;
-  --cursor-3-bg: #f1f68f;
-  --cursor-4-bg: #b0efda;
-  --cursor-5-bg: #d5c9fb;
-  --cursor-6-bg: #ffbc90;
+html, body {
+  scroll-behavior: smooth;
+}
 
-  --cursor-1-bg-line: #eef1f4;
-  --cursor-2-bg-line: #1f272e;
-  --cursor-3-bg-line: #f1f68f;
-  --cursor-4-bg-line: #b0efda;
-  --cursor-5-bg-line: #d5c9fb;
-  --cursor-6-bg-line: #ffbc90;
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0;
+  background-color: var(--color-2-bg);
+}
 
-  --curzr-logo-color: #292927;
-
-  body {
-    position: relative;
-    width: 100%;
-    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: .875rem;
-    overflow: hidden;
-    color: #ffffff;
-
-    .page {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      min-height: 100vh;
-      background-color: var(--cursor-2-bg);
-    }
-  }
+::-webkit-scrollbar-thumb {
+  background-color: #aa93f8;
+  border: 2px solid var(--color-2-bg);
+  border-radius: 50px;
 }

@@ -2,12 +2,27 @@
 
   <!-- PRESENTATION -->
 
-  <section id="presentation" class="welcome flex justify-content-start align-items-center">
+  <section id="presentation" class="flex justify-content-start align-items-center background">
     <div class="flex flex-column align-items-start">
       <h1>Hello!</h1>
       <h1>I'm <span>{{ title }}</span>!</h1>
     </div>
     <div class="background"></div>
+  </section>
+  
+  <!-- ABOUT -->
+  
+  <section id="about" class="flex justify-content-center align-items-center">
+    <div class="flex justify-content-center align-items-center gap-8 px-8">
+      <div class="col-6 flex flex-column justify-content-center align-items-center gap-4 content">
+        <h2 class="mb-6">About <span>me</span></h2>
+        <p>I'm a former corporate attorney, one of the name partners at Specter Litt Wheeler Williams, the managing partner of Specter Litt, and a former Assistant District Attorney for the New York County District Attorney's Office. He is also the husband of Donna Paulsen.</p>
+        <p>After being promoted to the position of senior partner at Pearson Hardman in 2011, he hired Mike Ross, a veritable genius with a photographic memory who was able to pass the bar exam despite not attending law school, as his associate, and became his mentor.</p>
+      </div>
+      <div class="col-fixed flex justify-content-center align-items-center img">
+        <img src="../assets/images/Harvey Specter.jpg" alt="">
+      </div>
+    </div>
   </section>
 
   <!-- NAVIGATION -->
@@ -15,13 +30,13 @@
   <nav id="navigation" class="flex justify-content-center align-items-center">
     <ul class="menu flex justify-content-center align-items-center">
       <li class="flex justify-content-center align-items-center">
-        <a class="w-full h-full flex justify-content-center align-items-center" routerLink="/home" routerLinkActive="active">Home</a>
+        <a class="w-full h-full flex justify-content-center align-items-center" routerLink="#presentation" routerLinkActive="active" (click)="navigation($event)">Home</a>
       </li>
       <li class="flex justify-content-center align-items-center">
-        <a class="w-full h-full flex justify-content-center align-items-center" routerLink="/about" routerLinkActive="active">About</a>
+        <a class="w-full h-full flex justify-content-center align-items-center" routerLink="#about" routerLinkActive="active" (click)="navigation($event)">About</a>
       </li>
       <li class="flex justify-content-center align-items-center">
-        <a class="w-full h-full flex justify-content-center align-items-center" routerLink="/contact" routerLinkActive="active">Contact</a>
+        <a class="w-full h-full flex justify-content-center align-items-center" routerLink="#contact" routerLinkActive="active" (click)="navigation($event)">Contact</a>
       </li>
     </ul>
   </nav>
